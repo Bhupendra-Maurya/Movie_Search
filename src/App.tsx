@@ -2,10 +2,9 @@ import { useState } from 'react';
 import { Search } from 'lucide-react';
 import { MovieCard } from './components/MovieCard';
 import { MovieDetails } from './components/MovieDetails';
-import { Movie, MovieDetails as MovieDetailsType, SearchResponse } from './types';
+import { Movie, MovieDetails as MovieDetailsType } from './types';
 
 const API_KEY = 'a64e9d75'; 
-const BASE_URL = 'https://www.omdbapi.com/'; 
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
@@ -21,9 +20,8 @@ function App() {
     setError(null);
 
     try {
-      const response = await fetch(`${BASE_URL}?apikey=${API_KEY}&s=${searchTerm}`);
-      const data: SearchResponse = await response.json();
-      console.log(data)
+      const response = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&s=${searchTerm}`);
+      const data = await response.json();
 
       if (data.Response === 'False') {
         setError('No movies found');
@@ -42,7 +40,7 @@ function App() {
 
   const fetchMovieDetails = async (id: string) => {
     try {
-      const response = await fetch(`${BASE_URL}?apikey=${API_KEY}&i=${id}`);
+      const response = await fetch(`https://www.omdbapi.com/?apikey=${API_KEY}&i=${id}`);
       const data = await response.json();
 
       if (data.Response === 'True') {
