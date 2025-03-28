@@ -1,7 +1,7 @@
 # Movie Search App
-
 This is a React-based Movie Search App that fetches movie data from the OMDb API. Users can search for movies by title, view a list of results, and click on a movie to see more details.
 
+![alt text](image.png)
 ## Features
 
 - **Search Bar**: Users can enter a movie title to search.
