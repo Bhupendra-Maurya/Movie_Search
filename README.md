@@ -54,3 +54,12 @@ This is a React-based Movie Search App that fetches movie data from the OMDb API
 3. Browse the movie results displayed in a grid.
 4. Click on a movie card to view more details.
 5. Click the close button (X) to return to the search results.
+
+
+
+
+
+
+I deployed my assignment on Vercel, but it's blocking the OMDB API. I've pushed my code to GitHub and will upload a video there. I'll try to fix the issue, update the code, and push the changes along with the live link.  GitHub Link:- https://github.com/Bhupendra-Maurya/Movie_Search
+
+Video Link:- https://drive.google.com/file/d/1Bn09RBuj82-OiTcQIcLpKq1a261B8XyP/view?usp=sharing
