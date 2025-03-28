@@ -5,7 +5,7 @@ import { MovieDetails } from './components/MovieDetails';
 import { Movie, MovieDetails as MovieDetailsType, SearchResponse } from './types';
 
 const API_KEY = 'a64e9d75'; 
-const BASE_URL = 'http://www.omdbapi.com/'; 
+const BASE_URL = 'https://www.omdbapi.com/'; 
 
 function App() {
   const [searchTerm, setSearchTerm] = useState('');
